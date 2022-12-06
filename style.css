@@ -108,6 +108,7 @@ html {
   }
   .container .cel-parent label {
     margin-left: 0;
+    margin-bottom: 1rem;
   }
   .container .fah-parent {
     display: flex;
@@ -117,6 +118,7 @@ html {
   }
   .container .fah-parent label {
     margin-left: 0;
+    margin-bottom: 1rem;
   }
 }
 @media (max-width: 350px) {

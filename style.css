@@ -121,17 +121,23 @@ html {
     margin-bottom: 1rem;
   }
 }
-@media (max-width: 350px) {
+@media (max-width: 400px) {
   html {
-    font-size: 50%;
+    font-size: 45%;
   }
   .container .result {
     width: 180px;
   }
+
   .container .cel-parent input {
     width: 150px;
   }
   .container .fah-parent input {
     width: 150px;
+  }
+}
+@media (max-width: 275px) {
+  html {
+    font-size: 40%;
   }
 }

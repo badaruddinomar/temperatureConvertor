@@ -5,45 +5,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style.css" />
-    <title>Document</title>
+    <title>Temperature-Convertor</title>
   </head>
   <body>
-    <section class="container">
-      <button class="btnReset">Reset</button>
-      <div>
-        <h1>Convert Celsius to Fahrenheit</h1>
+    <div class="container">
+      <h1 class="heading">Temperature Convertor</h1>
+      <p class="result">Result:</p>
+      <div class="cel-parent">
+        <label for="">Celsius</label>
         <div>
-          <div class="c_f">
-            <label>Celsius</label>
-            <input class="cel1" type="number" placeholder="℃" />
-          </div>
-          <p>TO</p>
-          <div>
-            <label for="">Fahrenheit</label>
-            <input class="fah1" type="number" placeholder="℉" />
-          </div>
-          <button class="btnCTF">Convert</button>
+          <input class="cel-val" type="number" placeholder="0℃" />
+          <button class="cel-btn">Result</button>
         </div>
       </div>
-      <div class="f_c">
-        <h1>Convert Fahrenheit to Celsius</h1>
+      <div class="fah-parent">
+        <label for="">Fahrenheit</label>
         <div>
-          <div>
-            <label for="">Fahrenheit</label>
-            <input class="fah2" type="number" placeholder="℉" />
-          </div>
-
-          <p>TO</p>
-
-          <div>
-            <label>Celsius</label>
-            <input class="cel2" type="number" placeholder="℃" />
-          </div>
-          <button class="btnFTC">Convert</button>
+          <input class="fah-val" type="number" placeholder="0℉" />
+          <button class="fah-btn">Result</button>
         </div>
       </div>
-    </section>
-
+      <button class="reset">Reset</button>
+    </div>
     <script src="./script.js"></script>
   </body>
 </html>

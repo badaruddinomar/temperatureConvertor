@@ -1,88 +1,135 @@
 * {
-  padding: 0;
   margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
+
 html {
   font-size: 62.5%;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-}
-body {
-  background-color: black;
-  color: white;
 }
 .container {
   width: 100vw;
   height: 100vh;
+  padding: 4rem 0;
+  background: #e0e0e0;
+
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: start;
   flex-direction: column;
 }
-.container .btnReset {
-  border: none;
-  outline: none;
+.container .result {
+  font-size: 3rem;
+  background: cornsilk;
   padding: 1rem 1.5rem;
-  background-color: aqua;
-  color: black;
-  font-size: 2rem;
-  font-weight: bold;
-  cursor: pointer;
+  width: 230px;
+  border-radius: 3px;
+  margin-left: 1rem;
+  align-self: center;
+
   border-radius: 4px;
-  transition: all 0.23s;
+  background: #e0e0e0;
+  box-shadow: 5px 5px 17px #c7c7c7, -5px -5px 17px #f9f9f9;
 }
-.btnReset:hover {
-  transform: translateY(2px);
+.container .heading {
+  font-size: 4rem;
+  margin-bottom: 5rem;
+  text-align: center;
+  padding: 0 1rem;
+  line-height: 1.6;
 }
-.container div {
-  margin: 3rem;
-}
-.container div h1 {
-  font-size: 3rem;
-}
-.container div div {
+.container .cel-parent {
   display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.container div div div {
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  flex-direction: column;
-}
-.container div div div input {
-  padding: 0.4rem 0.6rem;
-  width: 200px;
-  height: 50px;
   margin: 2rem 0;
+  padding: 0 1rem;
+}
+.container .reset {
+  margin: 3rem 0;
+}
+.container .cel-parent label {
+  font-size: 3rem;
+  margin: 0 2rem;
+}
+.container .cel-parent input {
   border: none;
   outline: none;
   font-size: 2rem;
-  font-weight: bold;
+  background: gray;
+  padding: 1rem;
+
+  border-radius: 4px;
+  background: #e0e0e0;
+  box-shadow: 5px 5px 17px #c7c7c7, -5px -5px 17px #f9f9f9;
 }
-.container div div div label {
-  font-size: 2rem;
-  font-weight: bold;
+.container .fah-parent {
+  display: flex;
 }
-.container div div p {
-  font-size: 3rem;
-  font-weight: bold;
-  letter-spacing: 3px;
-  margin-top: 2rem;
-}
-.container div div button {
+.container button {
   border: none;
-  padding: 1.3rem 2rem;
-  border-radius: 3px;
-  background: aqua;
+  outline: none;
   font-size: 2rem;
-  font-weight: bold;
+  padding: 1rem 1.5rem;
   cursor: pointer;
-  margin-top: 2rem;
-  transform: all 0.23s;
+  margin: 0 2rem;
+  transition: 0.5s;
+
+  border-radius: 4px;
+  background: #e0e0e0;
+  box-shadow: 5px 5px 17px #c7c7c7, -5px -5px 17px #f9f9f9;
 }
-.container div div button:hover {
-  transform: translateY(2px);
+.container button:hover {
+  background-color: #f9f9f9;
+}
+.container .fah-parent label {
+  font-size: 3rem;
+  margin: 0 2rem;
+  margin-left: -1.7rem;
+}
+.container .fah-parent input {
+  border: none;
+  outline: none;
+  font-size: 2rem;
+  background: gray;
+  padding: 1rem;
+
+  border-radius: 4px;
+  background: #e0e0e0;
+  box-shadow: 5px 5px 17px #c7c7c7, -5px -5px 17px #f9f9f9;
+}
+@media (max-width: 500px) {
+  html {
+    font-size: 55%;
+  }
+  .container .cel-parent {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+  }
+  .container .cel-parent label {
+    margin-left: 0;
+  }
+  .container .fah-parent {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+  }
+  .container .fah-parent label {
+    margin-left: 0;
+  }
+}
+@media (max-width: 350px) {
+  html {
+    font-size: 50%;
+  }
+  .container .result {
+    width: 180px;
+  }
+  .container .cel-parent input {
+    width: 150px;
+  }
+  .container .fah-parent input {
+    width: 150px;
+  }
 }
